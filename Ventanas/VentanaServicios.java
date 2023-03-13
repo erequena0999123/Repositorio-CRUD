@@ -72,7 +72,7 @@ public class VentanaServicios extends JFrame {
 		
 		JLabel etiquetaRepuestos = new JLabel("Repuestos:");
 		etiquetaRepuestos.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		etiquetaRepuestos.setBounds(38, 130, 46, 14);
+		etiquetaRepuestos.setBounds(38, 130, 82, 14);
 		contentPane.add(etiquetaRepuestos);
 		
 		JLabel etiquetaGarantia = new JLabel("Meses Garantía:");
@@ -125,6 +125,8 @@ public class VentanaServicios extends JFrame {
 		botonFinalizar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				JOptionPane.showMessageDialog(null, "Registro exitoso", "Info", JOptionPane.INFORMATION_MESSAGE);
+				Ventana2 llamarVentana2 = new Ventana2();
+				llamarVentana2.setVisible(true);
 				dispose();
 			}
 		});

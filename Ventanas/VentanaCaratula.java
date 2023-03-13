@@ -47,7 +47,7 @@ public class VentanaCaratula extends JFrame {
 		setTitle("Proyecto Integrador");
 		setBackground(new Color(32, 178, 170));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 600, 672);
+		setBounds(100, 100, 612, 672);
 		contentPane = new JPanel();
 		contentPane.setForeground(new Color(0, 0, 0));
 		contentPane.setBackground(new Color(255, 255, 255));
@@ -122,19 +122,19 @@ public class VentanaCaratula extends JFrame {
 		etiquetaCar10.setBounds(30, 387, 96, 14);
 		contentPane.add(etiquetaCar10);
 		
-		JLabel etiquetaCar11 = new JLabel("REQUENA EMMANUEL");
-		etiquetaCar11.setFont(new Font("Times New Roman", Font.BOLD, 20));
-		etiquetaCar11.setBounds(161, 386, 236, 16);
+		JLabel etiquetaCar11 = new JLabel("REQUENA TONONY EMMANUEL ALEJANDRO");
+		etiquetaCar11.setFont(new Font("Times New Roman", Font.PLAIN, 20));
+		etiquetaCar11.setBounds(161, 386, 417, 16);
 		contentPane.add(etiquetaCar11);
 		
 		JLabel etiquetaCar12 = new JLabel("SANDOVAL PILCA JAVIER MAURICIO");
-		etiquetaCar12.setFont(new Font("Times New Roman", Font.BOLD, 20));
+		etiquetaCar12.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 		etiquetaCar12.setBounds(160, 407, 371, 18);
 		contentPane.add(etiquetaCar12);
 		
-		JLabel etiquetaCar13 = new JLabel("VINUEZA ERICK");
-		etiquetaCar13.setFont(new Font("Times New Roman", Font.BOLD, 20));
-		etiquetaCar13.setBounds(161, 428, 199, 18);
+		JLabel etiquetaCar13 = new JLabel("VINUEZA AYALA ERICK THOMAS");
+		etiquetaCar13.setFont(new Font("Times New Roman", Font.PLAIN, 20));
+		etiquetaCar13.setBounds(161, 428, 413, 18);
 		contentPane.add(etiquetaCar13);
 		
 		JLabel etiquetaCar14 = new JLabel("TUTOR:");
@@ -142,9 +142,9 @@ public class VentanaCaratula extends JFrame {
 		etiquetaCar14.setBounds(30, 488, 96, 18);
 		contentPane.add(etiquetaCar14);
 		
-		JLabel etiquetaCar15 = new JLabel("ING. MONCAYO GUIDO");
-		etiquetaCar15.setFont(new Font("Times New Roman", Font.BOLD, 20));
-		etiquetaCar15.setBounds(161, 488, 234, 18);
+		JLabel etiquetaCar15 = new JLabel("Ing. MONCAYO GUIDO");
+		etiquetaCar15.setFont(new Font("Times New Roman", Font.PLAIN, 20));
+		etiquetaCar15.setBounds(161, 488, 234, 22);
 		contentPane.add(etiquetaCar15);
 		
 		JLabel etiquetaCar16 = new JLabel("MARZO 2023");

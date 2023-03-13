@@ -53,14 +53,16 @@ public class Ventana2 extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JButton botonSalir = new JButton("Salir");
-		botonSalir.addActionListener(new ActionListener() {
+		JButton botonCerrarS = new JButton("Cerrar sesión");
+		botonCerrarS.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				Ventana1 llamarVentana1 = new Ventana1();
+				llamarVentana1.setVisible(true);
 				dispose();
 			}
 		});
-		botonSalir.setBounds(54, 192, 101, 23);
-		contentPane.add(botonSalir);
+		botonCerrarS.setBounds(38, 192, 115, 23);
+		contentPane.add(botonCerrarS);
 		
 		JButton botonNuevoR = new JButton("Nuevo Registro");
 		botonNuevoR.addActionListener(new ActionListener() {
@@ -74,39 +76,52 @@ public class Ventana2 extends JFrame {
 		contentPane.add(botonNuevoR);
 		
 		JButton botonClientes = new JButton("Clientes");
-		botonClientes.setBounds(118, 56, 109, 23);
+		botonClientes.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				VisorClientes llamarVisorClientes = new VisorClientes();
+				llamarVisorClientes.setVisible(true);
+				dispose();
+			}
+		});
+		botonClientes.setBounds(118, 40, 109, 23);
 		contentPane.add(botonClientes);
 		
 		JButton botonServicios = new JButton("Servicios");
-		botonServicios.setBounds(118, 158, 109, 23);
+		botonServicios.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				VisorServicios llamarVisorServicios = new VisorServicios();
+				llamarVisorServicios.setVisible(true);
+				dispose();
+			}
+		});
+		botonServicios.setBounds(118, 142, 109, 23);
 		contentPane.add(botonServicios);
 		
 		JButton botonProductos = new JButton("Productos");
-		botonProductos.setBounds(118, 124, 109, 23);
+		botonProductos.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				VisorProductos llamarVisorProductos = new VisorProductos();
+				llamarVisorProductos.setVisible(true);
+				dispose();
+			}
+		});
+		botonProductos.setBounds(118, 108, 109, 23);
 		contentPane.add(botonProductos);
 		
 		JButton botonDirecciones = new JButton("Direcciones");
-		botonDirecciones.setBounds(118, 90, 109, 23);
+		botonDirecciones.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				VisorDirecciones llamarVisorDirecciones = new VisorDirecciones();
+				llamarVisorDirecciones.setVisible(true);
+				dispose();
+			}
+		});
+		botonDirecciones.setBounds(118, 74, 109, 23);
 		contentPane.add(botonDirecciones);
-		
-		JMenuBar menuBar = new JMenuBar();
-		menuBar.setBackground(UIManager.getColor("Button.background"));
-		menuBar.setToolTipText("");
-		menuBar.setBounds(0, 0, 63, 22);
-		contentPane.add(menuBar);
-		
-		JMenu mnNewMenu = new JMenu("Opciones");
-		menuBar.add(mnNewMenu);
-		
-		JMenuItem mntmNewMenuItem = new JMenuItem("Cambio de clave");
-		mnNewMenu.add(mntmNewMenuItem);
-		
-		JMenuItem mntmNewMenuItem_1 = new JMenuItem("Nueva tabla");
-		mnNewMenu.add(mntmNewMenuItem_1);
 		
 		JLabel etiquetaTablas = new JLabel("Tablas disponibles");
 		etiquetaTablas.setFont(new Font("Tahoma", Font.BOLD, 14));
-		etiquetaTablas.setBounds(103, 27, 139, 18);
+		etiquetaTablas.setBounds(103, 11, 139, 18);
 		contentPane.add(etiquetaTablas);
 	}
 }

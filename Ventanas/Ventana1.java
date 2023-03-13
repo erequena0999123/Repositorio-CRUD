@@ -23,6 +23,7 @@ public class Ventana1 extends JFrame {
 	private JPanel contentPane;
 	private JTextField cajaUsuario;
 	private JPasswordField cajaContras;
+	private JButton botonSalir;
 
 	/**
 	 * Launch the application.
@@ -87,7 +88,16 @@ public class Ventana1 extends JFrame {
 				}
 			}
 		});
-		boton01.setBounds(125, 113, 89, 23);
+		boton01.setBounds(69, 114, 89, 23);
 		contentPane.add(boton01);
+		
+		botonSalir = new JButton("Salir");
+		botonSalir.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				dispose();
+			}
+		});
+		botonSalir.setBounds(190, 114, 89, 23);
+		contentPane.add(botonSalir);
 	}
 }

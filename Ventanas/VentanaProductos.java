@@ -19,6 +19,7 @@ public class VentanaProductos extends JFrame {
 	private JTextField cajaProducto;
 	private JTextField cajaMarca;
 	private JTextField cajaModelo;
+	private JTextField cajaTipo;
 
 	/**
 	 * Launch the application.
@@ -61,13 +62,18 @@ public class VentanaProductos extends JFrame {
 		
 		JLabel etiquetaMarca = new JLabel("Marca:");
 		etiquetaMarca.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		etiquetaMarca.setBounds(38, 100, 46, 14);
+		etiquetaMarca.setBounds(38, 85, 46, 14);
 		contentPane.add(etiquetaMarca);
 		
 		JLabel etiquetaModelo = new JLabel("Modelo:");
 		etiquetaModelo.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		etiquetaModelo.setBounds(38, 150, 46, 14);
+		etiquetaModelo.setBounds(38, 120, 46, 14);
 		contentPane.add(etiquetaModelo);
+		
+		JLabel etiquetaTipo = new JLabel("Tipo:");
+		etiquetaTipo.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		etiquetaTipo.setBounds(38, 155, 46, 14);
+		contentPane.add(etiquetaTipo);
 		
 		cajaProducto = new JTextField();
 		cajaProducto.setBounds(120, 50, 200, 20);
@@ -75,14 +81,19 @@ public class VentanaProductos extends JFrame {
 		cajaProducto.setColumns(10);
 		
 		cajaMarca = new JTextField();
-		cajaMarca.setBounds(120, 100, 200, 20);
+		cajaMarca.setBounds(120, 85, 200, 20);
 		contentPane.add(cajaMarca);
 		cajaMarca.setColumns(10);
 		
 		cajaModelo = new JTextField();
-		cajaModelo.setBounds(120, 150, 200, 20);
+		cajaModelo.setBounds(120, 120, 200, 20);
 		contentPane.add(cajaModelo);
 		cajaModelo.setColumns(10);
+		
+		cajaTipo = new JTextField();
+		cajaTipo.setBounds(120, 155, 200, 20);
+		contentPane.add(cajaTipo);
+		cajaTipo.setColumns(10);
 		
 		JButton botonRegresar = new JButton("<");
 		botonRegresar.addActionListener(new ActionListener() {
@@ -114,5 +125,6 @@ public class VentanaProductos extends JFrame {
 		});
 		botonSiguiente.setBounds(250, 202, 50, 23);
 		contentPane.add(botonSiguiente);
+		
 	}
 }
