@@ -1,0 +1,49 @@
+1	1	1	18/07/2022	Cambio de Válvula interna	Válvula interna	3	F
+2	2	2	25/07/2022	Mantenmiento de lavadora			F
+3	3	3	21/05/2022	Cambio de resistencia	Resistencia Cristal	3	F
+4	4	4	18/07/2022	Mantenimiento de cocina	Bujías y módulo	3	F
+5	5	5	07/02/2023	Cambio de compresor	Compresor	3	F
+6	6	6	24/08/2022	Liempieza del sistema	Materiales de carga de gas	3	F
+7	7	7	20/10/2022	Cambio de agitador	Compró el cliente		F
+8	8	8	20/03/2022	Intrucciones del funcionamiento			G
+9	9	9	07/04/2022	Cambio deslizadores	Deslizadores	3	F
+10	10	10	26/10/2022	Mantenimiento de secadora			F
+11	11	11	29/01/2023	Mantenimiento de Lavadora			F
+12	12	12	03/05/2022	Chequeo			F
+13	13	13	28/11/2022	Nivelación y programación			F
+14	14	14	30/04/2022	Cambio de filtros de agua	Filtros de agua		F
+15	15	15	26/09/2022	Cambio de sensor de temperatura	Sensor de temperatura	3	F
+16	16	16	10/08/2022	Cambio de bomba de agua	Compró el cliente		F
+17	17	17	05/12/2022	Reparación de tarjeta electrónica		3	F
+18	18	18	09/09/2022	Mantenimiento de lavadora			F
+19	19	19	16/12/2022	Mantenimiento de Lavadora			F
+20	20	20	24/08/2022	Reconexión de tarjeta electrónica			F
+21	21	21	06/06/2022	Reconexión de cables sueltos			F
+22	22	22	20/03/2022	Intrucciones del funcionamiento			G
+23	23	23	19/12/2021	Limpieza de interruptor de movimiento			F
+24	24	24	12/08/2021	Cambio de sistema de inducción	Sistema de Inducción	3	F
+25	25	25	02/07/2022	Cambio de ventilador	Compró el cliente		F
+26	26	26	07/11/2022	Instalación de refrigeradora	Filtro de agua externo		F
+27	27	27	17/09/2022	Cambio de Filtro de agua	Filtro eterno		F
+28	28	28	23/12/2022	Cambio de resistencia y pastilla	Resistencia y pastilla	6	F
+29	29	29	05/05/2022	Revisión			F
+30	30	30	12/11/2022	Cambio de bomba de agua	Bomba de agua	3	F
+31	31	31	24/02/2023	Cambio de termopar suelo	Termopar suelo	3	F
+32	32	32	12/09/2022	Cambio de ventilador 220V	Ventilador	3	F
+33	33	33	01/12/2022	Mantenimiento de Lavadora			F
+34	34	34	05/12/2022	Reubicación de termopar suelo			F
+35	35	35	09/02/2023	Cambio de Filtro de agua			F
+36	36	36	04/07/2022	Limpieza de ducto de drenaje			F
+37	37	37	30/06/2022	Mantenimiento de lavaseca			F
+38	38	38	07/07/2022	Instalación de refrigeradora			F
+39	39	39	31/10/2022	Mantenimiento de lavadora			F
+40	40	40	08/09/2022	Cambio de electroválvula y banda	Electroválvula  y banda	3	F
+41	41	41	30/04/2022	Mantenimiento de Lavadora			F
+42	42	42	25/02/2023	Revisión de lavadora			F
+43	43	43	01/10/2022	Cambio de sensor de temperatura	Sensor de temperatura	3	F
+44	44	44	17/05/2022	Cambio de timer y termostato	Timer y Termostato	3	F
+45	45	45	29/08/2020	Mantenimiento de Lavadora			F
+46	46	46	09/12/2022	Reinstalación			F
+47	47	47	15/11/2022	Camibio de ventilador	Ventilador refrigerador	3	F
+48	48	48	10/03/2020	Descongelamiento de manguera del dispensador			F
+49	49	49	23/11/2020	Cambio de resistencia y pastilla	Resistencia y pastilla	3	F

@@ -1,0 +1,49 @@
+1	Quito	Carapungo	Otto Arosemena y Sta. Teresita		
+2	Quito	La Armenia	N6c y Alfredo Baquerizo	Edif. Montevalle	
+3	Quito	Monteserrín	Julio Arellano y Malvas	Edif. Praga	
+4	Quito	San Carlos	Manuel Semblantes y Anda Aguirre		Frente a dep. de cerveza
+5	Quito	La Comuna	Humberto Albornoz y 7ma Trans.		
+6	Quito	Tumbaco	Av. Interoceánica	Edif. Syrah 509	Frente al Nacional
+7	Quito	La Planada	N77		
+8	Quito	Pusuquí	El Edén y El Paraíso	Oe51	Cerca a la escuela de policias
+9	Quito	Nono	Principal		Restaurante Tierras de Fuego
+10	Quito	Carretas	Conj. Urabá 2	277	
+11	Quito	Carcelén	Francisco del Campo	Oe3-07	Junto a Hornados
+12	Quito	La Magdalena			Recomendación Mauricio Ortiz
+13	Quito	Monteserrín	Urb. Campo Alegre		Primera casa al ingreso
+14	Quito	Baker 2	Miguel Álvarez y José Gole	Oe21-18	
+15	Quito	Pomasqui	Manuel Córdova, Con. Portón de Málaga 2	8	
+16	Quito	San Carlos	Mariscal Sucre, Bloque Cayambe		Cerca al parque Inglés
+17	Quito	Monteserrín	Lomas de Monteserrín, Edif. Vivalto		
+18	Quito	La Planada	Av. Principal		
+19	Quito	San Juan de Calderón	7ma. Transversal y El Dorado		
+20	Quito	Kennedy	Diógenes Paredes y Ramón Borja	N52-108	
+21	Quito	Cumbayá	Rafaelle Giannetti y de las Miramelindas		Primavera 2
+22	Quito	Pusuquí	El Edén y El Paraíso	Oe51	Cerca a la escuela de policias
+23	Quito	Ponciano Alto	Mariano Pozo y José Andrade	N74-113	
+24	Quito	Labrador	Estocolmo y Amazonas	E2-20	
+25	Quito		2da Transversal y Francisco de la Pita		Atrás del CC. El Bosque
+26	Quito	Bellavista	Augusto Egas y Bosmediano	N33-99	Edif. Zafiro
+27	Quito	Calderón, Bonanza	Marianita de Jesús y Ushiña, Con. Portal del Cielo	3	
+28	Quito	Ponciano Bajo	Francisco Dalmau y Calle 8	N67-134	
+29	Quito	Ponciano Alto	N73A y Juan Barrezueta	Oe2-27	
+30	Quito	Mastodontes	Jaime Roldós Aguilera, Conj. Pionero 2		
+31	Quito	Calderon	El Arenal, Conj. Casales Buenaventura, Etapa 1	51	
+32	Quito	La Libertad	Escalinatas y La Libertad		Subiendo las gradas
+33	Quito	Pusuquí	Manuel Córdova, Conj. Capulí, Lote 12	4	
+34	Quito	Kennedy	Rafael Ramos y Gonzalo Zaldumbide		
+35	Quito	Monteserrín	Ibis del Moral 2	4D	
+36	Quito	El Inca	Isla Seymour y Pablo del Solar	N45-89	
+37	Quito	La Carolina	Italia y Vancouver	N31-65	
+38	Quito	Carapungo	Otto Arosemena y Sta. Teresita		
+39	Quito	Guayllabamba	Rumichupa		Cerca al Zoológico
+40	Quito	Kennedy	Pasaje E	E8-68	
+41	Quito	Guajaló	Oe11		Esquina, cervecería
+42	Quito	San Juan de Calderón			
+43	Quito	El Condado	Diego de Velásquez	Oe4-66	
+44	Quito	La Carolina	Edif. LE PARK		
+45	Quito	La Brasil	El Condor y Brasil	Oe3-56	
+46	Quito	La Carolina	NNUU y Amazonas		
+47	Quito	Tumbaco	Psje. San José y Universitara, Con. Villa Toscana		
+48	Quito	Cumbayá	Urb. Pillagua		
+49	Quito	Carapungo	Otto Arosemena y Sta. Teresita		
