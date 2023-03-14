@@ -12,6 +12,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
+import getset.Variables;
 import paquete_conexion_Postgresql.CRUD_Postgresql;
 
 import java.awt.event.ActionListener;
@@ -68,7 +69,7 @@ public class VisorDirecciones extends JFrame {
 		etiquetaClientes.setFont(new Font("Tahoma", Font.BOLD, 12));
 		etiquetaClientes.setBounds(242, 11, 138, 14);
 		contentPane.add(etiquetaClientes);
-		
+
 		JButton botonAtras = new JButton("Atrás");
 		botonAtras.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -79,164 +80,158 @@ public class VisorDirecciones extends JFrame {
 		});
 		botonAtras.setBounds(0, 0, 70, 23);
 		contentPane.add(botonAtras);
-		
+
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setBounds(0, 40, 575, 400);
 		contentPane.add(scrollPane);
-		
+
 		tablaDirecciones = new JTable();
 		tablaDirecciones.setModel(new DefaultTableModel(
-			new Object[][] {
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-				{null, null, null, null, null, null},
-			},
-			new String[] {
-				"id", "Ciudad", "Sector", "Calles", "N\u00B0 de casa", "Referencia"
-			}
-		));
+				new Object[][] { { null, null, null, null, null, null }, { null, null, null, null, null, null },
+						{ null, null, null, null, null, null }, { null, null, null, null, null, null },
+						{ null, null, null, null, null, null }, { null, null, null, null, null, null },
+						{ null, null, null, null, null, null }, { null, null, null, null, null, null },
+						{ null, null, null, null, null, null }, { null, null, null, null, null, null },
+						{ null, null, null, null, null, null }, { null, null, null, null, null, null },
+						{ null, null, null, null, null, null }, { null, null, null, null, null, null },
+						{ null, null, null, null, null, null }, { null, null, null, null, null, null },
+						{ null, null, null, null, null, null }, { null, null, null, null, null, null },
+						{ null, null, null, null, null, null }, { null, null, null, null, null, null },
+						{ null, null, null, null, null, null }, { null, null, null, null, null, null },
+						{ null, null, null, null, null, null }, { null, null, null, null, null, null },
+						{ null, null, null, null, null, null }, { null, null, null, null, null, null },
+						{ null, null, null, null, null, null }, { null, null, null, null, null, null },
+						{ null, null, null, null, null, null }, { null, null, null, null, null, null },
+						{ null, null, null, null, null, null }, { null, null, null, null, null, null },
+						{ null, null, null, null, null, null }, { null, null, null, null, null, null },
+						{ null, null, null, null, null, null }, { null, null, null, null, null, null },
+						{ null, null, null, null, null, null }, { null, null, null, null, null, null },
+						{ null, null, null, null, null, null }, { null, null, null, null, null, null },
+						{ null, null, null, null, null, null }, { null, null, null, null, null, null },
+						{ null, null, null, null, null, null }, { null, null, null, null, null, null },
+						{ null, null, null, null, null, null }, { null, null, null, null, null, null },
+						{ null, null, null, null, null, null }, { null, null, null, null, null, null },
+						{ null, null, null, null, null, null }, { null, null, null, null, null, null },
+						{ null, null, null, null, null, null }, { null, null, null, null, null, null },
+						{ null, null, null, null, null, null }, { null, null, null, null, null, null },
+						{ null, null, null, null, null, null }, { null, null, null, null, null, null },
+						{ null, null, null, null, null, null }, { null, null, null, null, null, null },
+						{ null, null, null, null, null, null }, { null, null, null, null, null, null },
+						{ null, null, null, null, null, null }, { null, null, null, null, null, null },
+						{ null, null, null, null, null, null }, { null, null, null, null, null, null },
+						{ null, null, null, null, null, null }, },
+				new String[] { "id", "Ciudad", "Sector", "Calles", "N\u00B0 de casa", "Referencia" }));
 		scrollPane.setViewportView(tablaDirecciones);
 		CRUD_Postgresql CRUD = new CRUD_Postgresql();
 		this.tablaDirecciones.setModel(CRUD.mostrar(D));
-		
+
 //Etiquetas
 //=================================================================================================================
-		
+
 		JLabel etiquetaID = new JLabel("ID");
 		etiquetaID.setBounds(600, 40, 46, 14);
 		contentPane.add(etiquetaID);
-		
+
 		JLabel etiquetaCiudad = new JLabel("Ciudad");
 		etiquetaCiudad.setBounds(600, 90, 46, 14);
 		contentPane.add(etiquetaCiudad);
-		
+
 		JLabel etiquetaSector = new JLabel("Sector");
 		etiquetaSector.setBounds(600, 140, 46, 14);
 		contentPane.add(etiquetaSector);
-		
+
 		JLabel etiquetaCalles = new JLabel("Calles");
 		etiquetaCalles.setBounds(600, 190, 46, 14);
 		contentPane.add(etiquetaCalles);
-		
+
 		JLabel etiquetaNum = new JLabel("N° de casa");
 		etiquetaNum.setBounds(600, 240, 70, 14);
 		contentPane.add(etiquetaNum);
-		
+
 		JLabel etiquetaRef = new JLabel("Referencia");
 		etiquetaRef.setBounds(600, 290, 70, 14);
 		contentPane.add(etiquetaRef);
-		
+
 //Cajas de texto
 //=================================================================================================================
-		
+
 		cajaID = new JTextField();
 		cajaID.setBounds(600, 55, 150, 20);
 		contentPane.add(cajaID);
 		cajaID.setColumns(10);
-		
+
 		cajaCiudad = new JTextField();
 		cajaCiudad.setBounds(600, 105, 150, 20);
 		contentPane.add(cajaCiudad);
 		cajaCiudad.setColumns(10);
-		
+
 		cajaSector = new JTextField();
 		cajaSector.setBounds(600, 155, 150, 20);
 		contentPane.add(cajaSector);
 		cajaSector.setColumns(10);
-		
+
 		cajaCalles = new JTextField();
 		cajaCalles.setBounds(600, 205, 150, 20);
 		contentPane.add(cajaCalles);
 		cajaCalles.setColumns(10);
-		
+
 		cajaNum = new JTextField();
 		cajaNum.setBounds(600, 255, 150, 20);
 		contentPane.add(cajaNum);
 		cajaNum.setColumns(10);
-		
+
 		cajaRef = new JTextField();
 		cajaRef.setBounds(600, 305, 150, 20);
 		contentPane.add(cajaRef);
 		cajaRef.setColumns(10);
-		
+
 //Botones
 //=================================================================================================================
-		
+
 		JButton botonActualizar = new JButton("Actualizar");
 		botonActualizar.setBackground(new Color(124, 252, 0));
 		botonActualizar.setBounds(585, 415, 92, 23);
 		contentPane.add(botonActualizar);
-		
+		botonActualizar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+
+				CRUD.actualizarDireccion(cajaCiudad.getText(), cajaSector.getText(), cajaCalles.getText(),
+						cajaNum.getText(), cajaRef.getText(), cajaID.getText());
+
+			}
+
+		});
+
 		JButton botonEliminar = new JButton("Eliminar");
 		botonEliminar.setBackground(new Color(255, 0, 51));
 		botonEliminar.setBounds(685, 415, 89, 23);
 		contentPane.add(botonEliminar);
-		
+		botonEliminar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+
+				CRUD.eliminarDireccion(cajaID.getText());
+
+			}
+
+		});
+
 		JButton botonSeleccionar = new JButton("Selecionar");
 		botonSeleccionar.setBounds(625, 365, 98, 23);
 		contentPane.add(botonSeleccionar);
+		Variables var = new Variables();
+		botonSeleccionar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+
+				CRUD.mostrarDireccion(cajaID.getText());
+
+				cajaCiudad.setText(var.getCiudad());
+				cajaSector.setText(var.getSector());
+				cajaCalles.setText(var.getCalle());
+				cajaNum.setText(var.getNum_casa());
+				cajaRef.setText(var.getReferencia());
+			}
+
+		});
 	}
 
 }

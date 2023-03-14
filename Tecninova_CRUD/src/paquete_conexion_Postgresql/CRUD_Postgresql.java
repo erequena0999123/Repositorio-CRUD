@@ -7,8 +7,12 @@ import java.sql.SQLException;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
+import getset.Variables;
+
 public class CRUD_Postgresql extends Conexion_Postgresql {
 	java.sql.Statement st;
+	ResultSet rs;
+	Variables var = new Variables();
 
 	public void insertarCliente(String nombre, String apellido, String telefono, String email) {
 		try {
@@ -229,6 +233,138 @@ public class CRUD_Postgresql extends Conexion_Postgresql {
 			JOptionPane.showMessageDialog(null, "No se encuentra la tabla seleccionada", "Mensaje", JOptionPane.INFORMATION_MESSAGE);
 		}
 		return null;
+	}
+	
+	public void mostrarCliente(String id_cliente) {
+		try {
+			Connection conexion = conectar();
+			st = conexion.createStatement();
+			String sql = "select * from clientes where id_cliente='"+id_cliente+"'";
+			rs = st.executeQuery(sql);
+			
+			if(rs.next()) {
+				var.setId_cliente(rs.getString("id_cliente"));
+				var.setNombre(rs.getString("nombre"));
+				var.setApellido(rs.getString("apellido"));
+				var.setTelefono(rs.getString("telefono"));
+				var.setEmail(rs.getString("email"));
+				
+			}
+			else {
+				var.setId_cliente("");
+				var.setNombre("");
+				var.setApellido("");
+				var.setTelefono("");
+				var.setEmail("");
+				JOptionPane.showMessageDialog(null, "No se encontro registro", "Sin registro", JOptionPane.INFORMATION_MESSAGE);				
+			}
+			st.close();
+			conexion.close();
+		}
+		catch(Exception e) {
+			JOptionPane.showMessageDialog(null, "Error en el sistema de busqueda " + e, "Error", JOptionPane.ERROR_MESSAGE);
+			
+		}
+	}
+	
+	public void mostrarDireccion(String id_direcciones) {
+		try {
+			Connection conexion = conectar();
+			st = conexion.createStatement();
+			String sql = "select * from direcciones where id_direcciones='"+id_direcciones+"'";
+			rs = st.executeQuery(sql);
+			
+			if(rs.next()) {
+				var.setId_direcciones(rs.getString("id_direcciones"));
+				var.setCiudad(rs.getString("ciudad"));
+				var.setSector(rs.getString("sector"));
+				var.setCalle(rs.getString("calle"));
+				var.setNum_casa(rs.getString("num_casa"));
+				var.setReferencia(rs.getString("referencia"));
+				
+			}
+			else {
+				var.setId_direcciones("");
+				var.setCiudad("");
+				var.setSector("");
+				var.setCalle("");
+				var.setNum_casa("");
+				var.setReferencia("");
+				JOptionPane.showMessageDialog(null, "No se encontro registro", "Sin registro", JOptionPane.INFORMATION_MESSAGE);				
+			}
+			st.close();
+			conexion.close();
+		}
+		catch(Exception e) {
+			JOptionPane.showMessageDialog(null, "Error en el sistema de busqueda " + e, "Error", JOptionPane.ERROR_MESSAGE);
+			
+		}
+	}
+	
+	public void mostrarProducto(String id_producto) {
+		try {
+			Connection conexion = conectar();
+			st = conexion.createStatement();
+			String sql = "select * from productos where id_producto='"+id_producto+"'";
+			rs = st.executeQuery(sql);
+			
+			if(rs.next()) {
+				var.setId_producto(rs.getString("id_producto"));
+				var.setProducto(rs.getString("producto"));
+				var.setMarca(rs.getString("marca"));
+				var.setModelo(rs.getString("modelo"));
+				var.setTipo(rs.getString("tipo"));
+				
+			}
+			else {
+				var.setId_producto("");
+				var.setProducto("");
+				var.setMarca("");
+				var.setModelo("");
+				var.setTipo("");
+				JOptionPane.showMessageDialog(null, "No se encontro registro", "Sin registro", JOptionPane.INFORMATION_MESSAGE);				
+			}
+			st.close();
+			conexion.close();
+		}
+		catch(Exception e) {
+			JOptionPane.showMessageDialog(null, "Error en el sistema de busqueda " + e, "Error", JOptionPane.ERROR_MESSAGE);
+			
+		}
+	}
+	
+	public void mostrarServicio(String id_servicio) {
+		try {
+			Connection conexion = conectar();
+			st = conexion.createStatement();
+			String sql = "select * from servicios where id_servicio='"+id_servicio+"'";
+			rs = st.executeQuery(sql);
+			
+			if(rs.next()) {
+				var.setId_servicio(rs.getString("id_servicio"));
+				var.setFecha_visita(rs.getString("fecha_visita"));
+				var.setServicio_realizado(rs.getString("servicio_realizado"));
+				var.setRepuesto(rs.getString("repuesto"));
+				var.setMeses_garantia(rs.getString("meses_garantia"));
+				var.setG_f(rs.getString("g_f"));
+				
+			}
+			else {
+				var.setId_servicio("");
+				var.setFecha_visita("");
+				var.setServicio_realizado("");
+				var.setRepuesto("");
+				var.setMeses_garantia("");
+				var.setG_f("");
+				JOptionPane.showMessageDialog(null, "No se encontro registro", "Sin registro", JOptionPane.INFORMATION_MESSAGE);				
+			}
+			st.close();
+			conexion.close();
+		}
+		catch(Exception e) {
+			JOptionPane.showMessageDialog(null, "Error en el sistema de busqueda " + e, "Error", JOptionPane.ERROR_MESSAGE);
+			
+		}
 	}
 
 	public void actualizarCliente(String nombre, String apellido, String telefono, String email, String id_cliente) {

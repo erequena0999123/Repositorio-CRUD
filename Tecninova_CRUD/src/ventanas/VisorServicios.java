@@ -14,6 +14,7 @@ import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 
+import getset.Variables;
 import paquete_conexion_Postgresql.CRUD_Postgresql;
 
 import java.awt.event.ActionListener;
@@ -228,15 +229,49 @@ public class VisorServicios extends JFrame {
 		botonActualizar.setBackground(new Color(124, 252, 0));
 		botonActualizar.setBounds(585, 415, 92, 23);
 		contentPane.add(botonActualizar);
+		botonActualizar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				CRUD.actualizarServicio(cajaFecha.getText(), cajaServicio.getText(), cajaRepuestos.getText(), cajaMesesG.getText(), cajaGF.getText(), cajaID.getText());
+								
+			}
+			
+		});
+		
+		
 		
 		JButton botonEliminar = new JButton("Eliminar");
 		botonEliminar.setBackground(new Color(255, 0, 51));
 		botonEliminar.setBounds(685, 415, 89, 23);
 		contentPane.add(botonEliminar);
+		botonEliminar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				CRUD.eliminarServicio(cajaID.getText());
+								
+			}
+			
+		});
+		
+		
 		
 		JButton botonSeleccionar = new JButton("Selecionar");
 		botonSeleccionar.setBounds(625, 365, 98, 23);
 		contentPane.add(botonSeleccionar);
+		Variables var = new Variables();
+		botonSeleccionar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				CRUD.mostrarServicio(cajaID.getText());
+				
+				cajaFecha.setText(var.getFecha_visita());
+				cajaServicio.setText(var.getServicio_realizado());
+				cajaRepuestos.setText(var.getRepuesto());
+				cajaMesesG.setText(var.getMeses_garantia());
+				cajaGF.setText(var.getG_f());
+			}
+			
+		});
 	}
 
 }

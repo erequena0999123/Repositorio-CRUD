@@ -90,6 +90,8 @@ public class Ventana1 extends JFrame {
 				}
 				else {
 					JOptionPane.showMessageDialog(null, "Datos incorrectos", "Ocurrió un error", JOptionPane.ERROR_MESSAGE);
+					cajaUsuario.setText("");
+					cajaContras.setText("");
 				}
 			}
 		});

@@ -14,6 +14,7 @@ import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 
+import getset.Variables;
 import paquete_conexion_Postgresql.CRUD_Postgresql;
 
 import java.awt.event.ActionListener;
@@ -219,15 +220,48 @@ public class VisorProductos extends JFrame {
 		botonActualizar.setBackground(new Color(124, 252, 0));
 		botonActualizar.setBounds(585, 415, 92, 23);
 		contentPane.add(botonActualizar);
+		botonActualizar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				CRUD.actualizarProducto(cajaProducto.getText(), cajaMarca.getText(), cajaModelo.getText(), cajaTipo.getText(), cajaID.getText());
+								
+			}
+			
+		});
+		
+		
 		
 		JButton botonEliminar = new JButton("Eliminar");
 		botonEliminar.setBackground(new Color(255, 0, 51));
 		botonEliminar.setBounds(685, 415, 89, 23);
 		contentPane.add(botonEliminar);
+		botonEliminar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				CRUD.eliminarProducto(cajaID.getText());
+								
+			}
+			
+		});
+		
+		
 		
 		JButton botonSeleccionar = new JButton("Selecionar");
 		botonSeleccionar.setBounds(625, 365, 98, 23);
 		contentPane.add(botonSeleccionar);
+		Variables var = new Variables();
+		botonSeleccionar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				CRUD.mostrarProducto(cajaID.getText());
+				
+				cajaProducto.setText(var.getProducto());
+				cajaMarca.setText(var.getMarca());
+				cajaModelo.setText(var.getModelo());
+				cajaTipo.setText(var.getTipo());
+			}
+			
+		});
 	}
 
 }

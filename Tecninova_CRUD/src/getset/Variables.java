@@ -1,31 +1,31 @@
 package getset;
 
 public class Variables {
-	private String nombre;
-	private String apellido;
-	private String telefono;
-	private String email;
-	private String id_cliente;
+	private static String nombre;
+	private static String apellido;
+	private static String telefono;
+	private static String email;
+	private static String id_cliente;
 
-	private String ciudad;
-	private String sector;
-	private String calle;
-	private String num_casa;
-	private String referencia;
-	private String id_direcciones;
+	private static String ciudad;
+	private static String sector;
+	private static String calle;
+	private static String num_casa;
+	private static String referencia;
+	private static String id_direcciones;
 
-	private String producto;
-	private String marca;
-	private String modelo;
-	private String tipo;
-	private String id_producto;
+	private static String producto;
+	private static String marca;
+	private static String modelo;
+	private static String tipo;
+	private static String id_producto;
 
-	private String fecha_visita;
-	private String servicio_realizado;
-	private String repuesto;
-	private String meses_garantia;
-	private String g_f;
-	private String id_servicio;
+	private static String fecha_visita;
+	private static String servicio_realizado;
+	private static String repuesto;
+	private static String meses_garantia;
+	private static String g_f;
+	private static String id_servicio;
 
 	public String getNombre() {
 		return nombre;

@@ -9,6 +9,7 @@ import javax.swing.JTable;
 import javax.swing.JScrollPane;
 import javax.swing.table.DefaultTableModel;
 
+import getset.Variables;
 import paquete_conexion_Postgresql.CRUD_Postgresql;
 
 import javax.swing.JLabel;
@@ -168,24 +169,6 @@ public class VisorClientes extends JFrame {
 		CRUD_Postgresql CRUD = new CRUD_Postgresql();
 		this.tablaClientes.setModel(CRUD.mostrar(C));
 		
-		tablaClientes.addMouseListener(new MouseAdapter() {
-			public void MousePressed(MouseEvent Mouse_evt) {
-				
-				JTable tabla = (JTable) Mouse_evt.getSource();
-				Point punto = Mouse_evt.getPoint();
-				int row = tabla.rowAtPoint(punto);
-				int col = tablaClientes.getSelectedRow();
-				
-				if(Mouse_evt.getClickCount() == 1) {
-					cajaNom.setText(tablaClientes.getModel().getValueAt(col, 1).toString());
-					cajaApellidos.setText(tablaClientes.getValueAt(tablaClientes.getSelectedColumn(), 2).toString());
-					cajaTelefono.setText(tablaClientes.getValueAt(tablaClientes.getSelectedRow(), 3).toString());
-					cajaEmail.setText(tablaClientes.getValueAt(tablaClientes.getSelectedRow(), 4).toString());
-				}
-			}
-		});
-		
-		
 //Etiquetas
 //=================================================================================================================
 		
@@ -244,16 +227,48 @@ public class VisorClientes extends JFrame {
 		botonActualizar.setBackground(new Color(124, 252, 0));
 		botonActualizar.setBounds(585, 415, 92, 23);
 		contentPane.add(botonActualizar);
+		botonActualizar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				CRUD.actualizarCliente(cajaNom.getText(), cajaApellidos.getText(), cajaTelefono.getText(), cajaEmail.getText(), cajaID.getText());
+								
+			}
+			
+		});
+		
+		
 		
 		JButton botonEliminar = new JButton("Eliminar");
 		botonEliminar.setBackground(new Color(255, 0, 51));
 		botonEliminar.setBounds(685, 415, 89, 23);
 		contentPane.add(botonEliminar);
+		botonEliminar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				CRUD.eliminarCliente(cajaID.getText());
+								
+			}
+			
+		});
+		
+		
 		
 		JButton botonSeleccionar = new JButton("Selecionar");
 		botonSeleccionar.setBounds(625, 365, 98, 23);
 		contentPane.add(botonSeleccionar);
-		
+		Variables var = new Variables();
+		botonSeleccionar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				CRUD.mostrarCliente(cajaID.getText());
+				
+				cajaNom.setText(var.getNombre());
+				cajaApellidos.setText(var.getApellido());
+				cajaTelefono.setText(var.getTelefono());
+				cajaEmail.setText(var.getEmail());
+			}
+			
+		});
 		
 	}
 }
