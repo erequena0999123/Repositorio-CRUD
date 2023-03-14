@@ -31,6 +31,7 @@ public class VisorClientes extends JFrame {
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	public JTable tablaClientes;
+	private JTextField cajaID;
 	private JTextField cajaNom;
 	private JTextField cajaApellidos;
 	private JTextField cajaTelefono;
@@ -58,7 +59,7 @@ public class VisorClientes extends JFrame {
 	 */
 	public VisorClientes() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 800, 400);
+		setBounds(100, 100, 800, 500);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
@@ -83,7 +84,7 @@ public class VisorClientes extends JFrame {
 		contentPane.add(botonAtrás);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(0, 40, 575, 300);
+		scrollPane.setBounds(0, 40, 575, 400);
 		contentPane.add(scrollPane);
 		
 		tablaClientes = new JTable();
@@ -188,42 +189,51 @@ public class VisorClientes extends JFrame {
 //Etiquetas
 //=================================================================================================================
 		
+		JLabel etiquetaID = new JLabel("ID");
+		etiquetaID.setBounds(600, 40, 46, 14);
+		contentPane.add(etiquetaID);
+		
 		JLabel etiquetaNombre = new JLabel("Nombres");
-		etiquetaNombre.setBounds(600, 40, 77, 14);
+		etiquetaNombre.setBounds(600, 90, 77, 14);
 		contentPane.add(etiquetaNombre);
 		
 		JLabel etiquetaApellidos = new JLabel("Apellidos");
-		etiquetaApellidos.setBounds(600, 90, 77, 14);
+		etiquetaApellidos.setBounds(600, 140, 77, 14);
 		contentPane.add(etiquetaApellidos);
 		
 		JLabel etiquetaTelefono = new JLabel("Teléfono");
-		etiquetaTelefono.setBounds(600, 140, 77, 14);
+		etiquetaTelefono.setBounds(600, 190, 77, 14);
 		contentPane.add(etiquetaTelefono);
 		
 		JLabel etiquetaEmail = new JLabel("Email");
-		etiquetaEmail.setBounds(600, 190, 46, 14);
+		etiquetaEmail.setBounds(600, 240, 46, 14);
 		contentPane.add(etiquetaEmail);
 		
 //Cajas de texto
 //=================================================================================================================
 		
+		cajaID = new JTextField();
+		cajaID.setBounds(600, 55, 150, 20);
+		contentPane.add(cajaID);
+		cajaID.setColumns(10);
+		
 		cajaNom = new JTextField();
-		cajaNom.setBounds(600, 55, 150, 20);
+		cajaNom.setBounds(600, 105, 150, 20);
 		contentPane.add(cajaNom);
 		cajaNom.setColumns(10);
 		
 		cajaApellidos = new JTextField();
-		cajaApellidos.setBounds(600, 105, 150, 20);
+		cajaApellidos.setBounds(600, 155, 150, 20);
 		contentPane.add(cajaApellidos);
 		cajaApellidos.setColumns(10);
 		
 		cajaTelefono = new JTextField();
-		cajaTelefono.setBounds(600, 155, 150, 20);
+		cajaTelefono.setBounds(600, 205, 150, 20);
 		contentPane.add(cajaTelefono);
 		cajaTelefono.setColumns(10);
 		
 		cajaEmail = new JTextField();
-		cajaEmail.setBounds(600, 205, 155, 20);
+		cajaEmail.setBounds(600, 255, 155, 20);
 		contentPane.add(cajaEmail);
 		cajaEmail.setColumns(10);
 		
@@ -232,13 +242,17 @@ public class VisorClientes extends JFrame {
 		
 		JButton botonActualizar = new JButton("Actualizar");
 		botonActualizar.setBackground(new Color(124, 252, 0));
-		botonActualizar.setBounds(585, 310, 92, 23);
+		botonActualizar.setBounds(585, 415, 92, 23);
 		contentPane.add(botonActualizar);
 		
 		JButton botonEliminar = new JButton("Eliminar");
 		botonEliminar.setBackground(new Color(255, 0, 51));
-		botonEliminar.setBounds(685, 310, 89, 23);
+		botonEliminar.setBounds(685, 415, 89, 23);
 		contentPane.add(botonEliminar);
+		
+		JButton botonSeleccionar = new JButton("Selecionar");
+		botonSeleccionar.setBounds(625, 365, 98, 23);
+		contentPane.add(botonSeleccionar);
 		
 		
 	}

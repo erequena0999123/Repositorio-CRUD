@@ -27,6 +27,7 @@ public class VisorDirecciones extends JFrame {
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private JTable tablaDirecciones;
+	private JTextField cajaID;
 	private JTextField cajaCiudad;
 	private JTextField cajaSector;
 	private JTextField cajaCalles;
@@ -55,7 +56,7 @@ public class VisorDirecciones extends JFrame {
 	 */
 	public VisorDirecciones() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 800, 400);
+		setBounds(100, 100, 800, 500);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
@@ -80,7 +81,7 @@ public class VisorDirecciones extends JFrame {
 		contentPane.add(botonAtras);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(0, 40, 575, 300);
+		scrollPane.setBounds(0, 40, 575, 400);
 		contentPane.add(scrollPane);
 		
 		tablaDirecciones = new JTable();
@@ -163,51 +164,60 @@ public class VisorDirecciones extends JFrame {
 //Etiquetas
 //=================================================================================================================
 		
+		JLabel etiquetaID = new JLabel("ID");
+		etiquetaID.setBounds(600, 40, 46, 14);
+		contentPane.add(etiquetaID);
+		
 		JLabel etiquetaCiudad = new JLabel("Ciudad");
-		etiquetaCiudad.setBounds(600, 40, 46, 14);
+		etiquetaCiudad.setBounds(600, 90, 46, 14);
 		contentPane.add(etiquetaCiudad);
 		
 		JLabel etiquetaSector = new JLabel("Sector");
-		etiquetaSector.setBounds(600, 90, 46, 14);
+		etiquetaSector.setBounds(600, 140, 46, 14);
 		contentPane.add(etiquetaSector);
 		
 		JLabel etiquetaCalles = new JLabel("Calles");
-		etiquetaCalles.setBounds(600, 140, 46, 14);
+		etiquetaCalles.setBounds(600, 190, 46, 14);
 		contentPane.add(etiquetaCalles);
 		
 		JLabel etiquetaNum = new JLabel("N° de casa");
-		etiquetaNum.setBounds(600, 190, 70, 14);
+		etiquetaNum.setBounds(600, 240, 70, 14);
 		contentPane.add(etiquetaNum);
+		
+		JLabel etiquetaRef = new JLabel("Referencia");
+		etiquetaRef.setBounds(600, 290, 70, 14);
+		contentPane.add(etiquetaRef);
 		
 //Cajas de texto
 //=================================================================================================================
 		
+		cajaID = new JTextField();
+		cajaID.setBounds(600, 55, 150, 20);
+		contentPane.add(cajaID);
+		cajaID.setColumns(10);
+		
 		cajaCiudad = new JTextField();
-		cajaCiudad.setBounds(600, 55, 150, 20);
+		cajaCiudad.setBounds(600, 105, 150, 20);
 		contentPane.add(cajaCiudad);
 		cajaCiudad.setColumns(10);
 		
 		cajaSector = new JTextField();
-		cajaSector.setBounds(600, 105, 150, 20);
+		cajaSector.setBounds(600, 155, 150, 20);
 		contentPane.add(cajaSector);
 		cajaSector.setColumns(10);
 		
 		cajaCalles = new JTextField();
-		cajaCalles.setBounds(600, 155, 150, 20);
+		cajaCalles.setBounds(600, 205, 150, 20);
 		contentPane.add(cajaCalles);
 		cajaCalles.setColumns(10);
 		
 		cajaNum = new JTextField();
-		cajaNum.setBounds(600, 205, 150, 20);
+		cajaNum.setBounds(600, 255, 150, 20);
 		contentPane.add(cajaNum);
 		cajaNum.setColumns(10);
 		
-		JLabel etiquetaRef = new JLabel("Referencia");
-		etiquetaRef.setBounds(600, 240, 70, 14);
-		contentPane.add(etiquetaRef);
-		
 		cajaRef = new JTextField();
-		cajaRef.setBounds(600, 255, 150, 20);
+		cajaRef.setBounds(600, 305, 150, 20);
 		contentPane.add(cajaRef);
 		cajaRef.setColumns(10);
 		
@@ -216,13 +226,17 @@ public class VisorDirecciones extends JFrame {
 		
 		JButton botonActualizar = new JButton("Actualizar");
 		botonActualizar.setBackground(new Color(124, 252, 0));
-		botonActualizar.setBounds(585, 310, 92, 23);
+		botonActualizar.setBounds(585, 415, 92, 23);
 		contentPane.add(botonActualizar);
 		
 		JButton botonEliminar = new JButton("Eliminar");
 		botonEliminar.setBackground(new Color(255, 0, 51));
-		botonEliminar.setBounds(685, 310, 89, 23);
+		botonEliminar.setBounds(685, 415, 89, 23);
 		contentPane.add(botonEliminar);
+		
+		JButton botonSeleccionar = new JButton("Selecionar");
+		botonSeleccionar.setBounds(625, 365, 98, 23);
+		contentPane.add(botonSeleccionar);
 	}
 
 }

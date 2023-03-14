@@ -27,6 +27,7 @@ public class VisorProductos extends JFrame {
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private JTable tablaProductos;
+	private JTextField cajaID;
 	private JTextField cajaProducto;
 	private JTextField cajaMarca;
 	private JTextField cajaModelo;
@@ -55,7 +56,7 @@ public class VisorProductos extends JFrame {
 	 */
 	public VisorProductos() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 800, 400);
+		setBounds(100, 100, 800, 500);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
@@ -80,7 +81,7 @@ public class VisorProductos extends JFrame {
 		contentPane.add(botonAtras);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(0, 40, 575, 300);
+		scrollPane.setBounds(0, 40, 575, 400);
 		contentPane.add(scrollPane);
 		
 		tablaProductos = new JTable();
@@ -163,42 +164,51 @@ public class VisorProductos extends JFrame {
 //Etiquetas
 //=================================================================================================================
 		
+		JLabel etiquetaID = new JLabel("ID");
+		etiquetaID.setBounds(600, 40, 46, 14);
+		contentPane.add(etiquetaID);
+		
 		JLabel etiquetaProducto = new JLabel("Producto");
-		etiquetaProducto.setBounds(600, 40, 56, 14);
+		etiquetaProducto.setBounds(600, 90, 56, 14);
 		contentPane.add(etiquetaProducto);
 		
 		JLabel etiquetaMarca = new JLabel("Marca");
-		etiquetaMarca.setBounds(600, 90, 46, 14);
+		etiquetaMarca.setBounds(600, 140, 46, 14);
 		contentPane.add(etiquetaMarca);
 		
 		JLabel etiquetaModelo = new JLabel("Modelo");
-		etiquetaModelo.setBounds(600, 140, 46, 14);
+		etiquetaModelo.setBounds(600, 190, 46, 14);
 		contentPane.add(etiquetaModelo);
 		
 		JLabel etiquetaTipo = new JLabel("Tipo");
-		etiquetaTipo.setBounds(600, 190, 46, 14);
+		etiquetaTipo.setBounds(600, 240, 46, 14);
 		contentPane.add(etiquetaTipo);
 		
 //Cajas de texto
 //=================================================================================================================
 		
+		cajaID = new JTextField();
+		cajaID.setBounds(600, 55, 150, 20);
+		contentPane.add(cajaID);
+		cajaID.setColumns(10);
+		
 		cajaProducto = new JTextField();
-		cajaProducto.setBounds(600, 55, 150, 20);
+		cajaProducto.setBounds(600, 105, 150, 20);
 		contentPane.add(cajaProducto);
 		cajaProducto.setColumns(10);
 		
 		cajaMarca = new JTextField();
-		cajaMarca.setBounds(600, 105, 150, 20);
+		cajaMarca.setBounds(600, 155, 150, 20);
 		contentPane.add(cajaMarca);
 		cajaMarca.setColumns(10);
 		
 		cajaModelo = new JTextField();
-		cajaModelo.setBounds(600, 155, 150, 20);
+		cajaModelo.setBounds(600, 205, 150, 20);
 		contentPane.add(cajaModelo);
 		cajaModelo.setColumns(10);
 		
 		cajaTipo = new JTextField();
-		cajaTipo.setBounds(600, 205, 155, 20);
+		cajaTipo.setBounds(600, 255, 155, 20);
 		contentPane.add(cajaTipo);
 		cajaTipo.setColumns(10);
 		
@@ -207,13 +217,17 @@ public class VisorProductos extends JFrame {
 		
 		JButton botonActualizar = new JButton("Actualizar");
 		botonActualizar.setBackground(new Color(124, 252, 0));
-		botonActualizar.setBounds(585, 310, 92, 23);
+		botonActualizar.setBounds(585, 415, 92, 23);
 		contentPane.add(botonActualizar);
 		
 		JButton botonEliminar = new JButton("Eliminar");
 		botonEliminar.setBackground(new Color(255, 0, 51));
-		botonEliminar.setBounds(685, 310, 89, 23);
+		botonEliminar.setBounds(685, 415, 89, 23);
 		contentPane.add(botonEliminar);
+		
+		JButton botonSeleccionar = new JButton("Selecionar");
+		botonSeleccionar.setBounds(625, 365, 98, 23);
+		contentPane.add(botonSeleccionar);
 	}
 
 }
