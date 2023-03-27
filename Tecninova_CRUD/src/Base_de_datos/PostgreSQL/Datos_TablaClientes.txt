@@ -1,0 +1,49 @@
+1	Carlos Pérez	Pérez	0997113785	
+2	Luis Eduardo 	Castro	0979053353	lcastrosotelo@aol.com
+3	Mery	Matínez	0984015272	merymartinez65@hotmail.com
+4	Javier	López	0998776450	
+5	Mónica	Tipantuña	0983822390	tipantunamonica398@gmail.com
+6	Andrea	Cobos	0998934730	andreacv8@gmail.com
+7	Nancy	Saldaña	0983721524	nancys1006@gmail.com
+8	Luis Alberto	Narváez	0987109195	lnarvaez.facturas@gmail.com
+9	Marcelo	Morillo	0981405652	marcelomorillo@yahoo.com.ar
+10	Tatiana	Delgado	0996698878	tatianapao21@hotmail.com
+11	Fausto Alfredo	Rendón Villacis	0987857810	falfredrendon@gmail.com
+12	María Rosa	Vela Pontón	0988475126	mariarosavela@hotmail.com
+13	Marcela	Vela de Cobos	09988323483	
+14	Teresa 	Álvarez	0995719212	lananatere2011@hotmail.com
+15	Santiago	Vallejo	0958980356	
+16	Germania	Coronel	0962736044	chavelarosascoronel@gmail.com
+17	Nathaly	Urgiles	0993342545	nalysun71@hotmail.com
+18	Carlos	Lapo	0999185957	carlos1660lapo@gmail.com
+19	Jeannett	Tayo	0979446056	jeannettayo81@gmail.com
+20	Janeth	Richy Julio	0984730676	richyjulioelian@hotmail.com
+21	Julieta 	Marín	0998013737	
+22	Rossana	Peñafiel	0995816999	roxy.pe.an@gmail.com
+23	Guadalupe	Ayala	0999003851	gdemartinez@hotmail.com
+24	Fernando	Pavón	0991645765	fpavone52@gmail.com
+25	Norberto	Vallejo	0998824878	
+26	Gloria	Velilla	0958911902	wynnkott@gmail.com
+27	Jorge Eduardo	Proaño Villaroel	0998225885	jorgeproanovillaroel@hotmail.com
+28	Margarita	Santamaría	0993738377	margaritasantamariaf@hotmail.com
+29	Gerardo	León	0998125231	gerardo.leon.vasquez@gmail.com
+30	Lorena	Valencia	0980353635	lorenachiquita84@outlook.es
+31	Lupita	Armijos	0999895176	lupitaarmijos05@hotrmail.es
+32	Fernanda	Moreno	0987825361	
+33	Eva	Peñafiel	0992746900	
+34	Elsa Jimena	Arboleda Toapanta	0997647760	earboleda1963@gmail.com
+35	Juan Carlos	Beltrán	0997278923	jcbeltrans01@gmail.com
+36	Isabel	Silva	0998327469	
+37	Inés 	Arias Aguinaga	0995801637	inearias@hotmail.com
+38	Rosa María	Avilés	0992718905	
+39	Mónica	Rojas	0984921714	
+40	Verónica	Hidalgo	0999249966	modaveronicahidalgo@hotmail.com
+41	Nancy		0967534694	
+42	Gonzalo	Cuenca	0992371775	
+43	Edwin	Flores Mora	0998221064	huflores9@hotmail.com
+44	Marjorie	Plua	0997986755	marjorieplua60@gmail.com
+45	Vanessa 	Esteban	098442064	vpesteban@gmail.com
+46	Ivor 	Quirola	+1(416)6602075	iqc.quirola@gmail.com
+47	María Alexandra	Guerra Briones	0998230214	shanamagb@hotmail.com
+48	Héctor	Reinoso	0999823229	
+49	Juan Francisco	Perez	0993926064	juanfran.perez@hotmail.com
