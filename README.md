@@ -26,3 +26,5 @@ Un IDE como IntelliJ IDEA o Eclipse Spring Tools Suite (STS).
 
 2. Clonar el Repositorio
 Abre tu terminal y ejecuta:
+
+<img src="ruta/relativa/a/la/imagen.png" alt="Descripción de la imagen" width="500"/>
